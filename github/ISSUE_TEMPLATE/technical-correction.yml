@@ -1,0 +1,27 @@
+name: Technical correction
+description: Report a possible technical error.
+title: "[Correction] "
+labels: ["technical-review"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Section or command
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and version
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Authoritative reference
