@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary Office files
+~$*
+*.tmp
+*.bak
+
+# Publication masters are not part of the public repository
+*.docx
+*.pdf
+*.epub

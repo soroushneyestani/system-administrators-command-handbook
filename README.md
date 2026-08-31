@@ -24,8 +24,7 @@ The project originally began in **2012** and reached its original completed edit
 
 In **2026**, the project was reopened and completely reconstructed for modern system administration.
 
-The 2026 edition is **not a reprint of the 2014 handbook**.  
-It is a re-engineering of the original concept, with a modern technical baseline, expanded platform coverage, updated administration tools, cross-platform comparisons, lifecycle information, operational guidance, and safety considerations.
+The 2026 edition is **not a reprint of the 2014 handbook**. It is a re-engineering of the original concept, with a modern technical baseline, expanded platform coverage, updated administration tools, cross-platform comparisons, lifecycle information, operational guidance, and safety considerations.
 
 ---
 
@@ -39,6 +38,8 @@ The original handbook reached its completed form based on the system-administrat
 
 **2026 — Complete Reconstruction**  
 The project was redesigned and technically rebuilt for modern Windows, PowerShell, Linux, and macOS administration.
+
+See the full [Changelog](CHANGELOG.md).
 
 ---
 
@@ -57,7 +58,9 @@ The goal is to help answer questions such as:
 - Is the operation potentially destructive?
 - What should be checked before using it in production?
 
-Where appropriate, the handbook compares equivalent administrative concepts across:
+---
+
+## Platform Coverage
 
 | Platform | Coverage |
 | --- | --- |
@@ -102,34 +105,26 @@ Depending on the tool, handbook entries may include:
 
 ### Lifecycle Status
 
-The handbook distinguishes between tools that merely still exist and tools that should actually be selected for modern administration.
-
-Entries may therefore be identified as:
-
 **Current · Legacy · Deprecated · Removed**
+
+The handbook distinguishes between tools that merely still exist and tools that should actually be selected for modern administration.
 
 ---
 
 ## Cross-Platform by Design
 
-A system administrator may work with Windows endpoints, Linux servers, macOS workstations, PowerShell automation, SSH sessions, and enterprise infrastructure during the same working day.
-
-The handbook treats these platforms as different implementations of many shared administrative concepts rather than completely isolated environments.
-
-For example:
-
 | Administrative Task | Windows | PowerShell | Linux | macOS |
 | --- | --- | --- | --- | --- |
 | List processes | `tasklist` | `Get-Process` | `ps` | `ps` |
-| Manage services | `sc` | `Get-Service` | `systemctl` | `launchctl` |
+| Manage services | `sc.exe` | `Get-Service` | `systemctl` | `launchctl` |
 | Inspect network configuration | `ipconfig` | `Get-NetIPConfiguration` | `ip` | `networksetup` |
 | Manage disks | `diskpart` | Storage cmdlets | `lsblk` / `parted` | `diskutil` |
+| Query DNS | `nslookup` | `Resolve-DnsName` | `dig` | `dig` |
+| Inspect TCP connections | `netstat` | `Get-NetTCPConnection` | `ss` | `netstat` |
 
 ---
 
 ## Editions
-
-The reconstructed handbook is being prepared in three language editions:
 
 ### English
 **System Administrator's Command Handbook**
@@ -154,60 +149,56 @@ All three editions follow the same underlying technical architecture.
 
 ---
 
+## Companion Resources
+
+### Quick References
+
+- [Service Management](quick-reference/services.md)
+- [Networking & DNS](quick-reference/networking.md)
+- [Storage & Filesystems](quick-reference/storage.md)
+- [Processes & Diagnostics](quick-reference/processes.md)
+- [Users & Permissions](quick-reference/users-permissions.md)
+- [Logs & Diagnostics](quick-reference/logs-diagnostics.md)
+- [Security & Access Control](quick-reference/security.md)
+
+### Technical Updates
+
+- [Windows](updates/windows.md)
+- [PowerShell](updates/powershell.md)
+- [Linux](updates/linux.md)
+- [macOS](updates/macos.md)
+
+### Language Companion Pages
+
+- [English](docs/english/README.md)
+- [Deutsch](docs/deutsch/README.md)
+- [فارسی](docs/persian/README.md)
+
+---
+
+## Errata & Corrections
+
+Operating systems evolve. Commands may be deprecated, replaced, removed, or change behavior after a printed edition is released.
+
+Verified corrections and important platform changes are documented in [ERRATA.md](ERRATA.md).
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a technical correction.
+
+---
+
 ## About This Repository
 
 This repository is the **official public companion repository** for the handbook.
 
-It will provide resources such as:
-
-- Cross-platform quick references
-- Selected examples
-- Technical updates
-- Errata and corrections
-- Version notes
-- Supporting administration resources
+It provides cross-platform quick references, selected administrative examples, technical updates, errata and corrections, version notes, and supporting administration resources.
 
 The complete publication manuscript and print-production files are **not distributed through this repository**.
 
 ---
 
-
-## Companion Resources
-
-### Quick References
-
-- [Service Management — Windows, PowerShell, Linux and macOS](quick-reference/services.md)
-
----
-
-## Planned Companion Resources
-
-The repository will gradually include references for areas such as:
-
-- Networking
-- Storage
-- Processes
-- Users and permissions
-- Logs and diagnostics
-- Security
-
-These resources are intended to complement the handbook and provide a continuously maintainable technical layer for information that may change after publication.
-
----
-
-## Errata & Technical Updates
-
-Operating systems evolve.
-
-Commands may be deprecated, replaced, removed, or change behavior after a printed edition has been released.
-
-Verified corrections and important platform changes will therefore be documented in this repository.
-
----
-
 ## Website
 
-The official project page will be published with additional information about the handbook, its history, language editions, companion resources, and future availability.
+The official project landing page will contain the complete project history, publication information, language editions, release status, and future purchase links.
 
 **Website: Coming Soon**
 
@@ -219,9 +210,15 @@ The official project page will be published with additional information about th
 
 ---
 
-## Release
+## Licensing
 
-**Public release: Coming Soon**
+Different parts of this repository use different licensing terms. See [LICENSE.md](LICENSE.md).
+
+---
+
+## Public Release
+
+**Coming Soon**
 
 English · Deutsch · فارسی
 
