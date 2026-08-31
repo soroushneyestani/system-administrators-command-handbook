@@ -4,6 +4,12 @@
 
 > One task. Three operating systems. One command reference.
 
+<p align="center">
+  <img src="assets/images/handbook-promo-cover-2026.png"
+       alt="System Administrator's Command Handbook — Windows, PowerShell, Linux and macOS"
+       width="720">
+</p>
+
 A practical, cross-platform command-line reference for system administrators.
 
 **Public release: Coming Soon**
