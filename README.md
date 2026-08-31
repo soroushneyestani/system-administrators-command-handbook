@@ -171,11 +171,19 @@ The complete publication manuscript and print-production files are **not distrib
 
 ---
 
+
+## Companion Resources
+
+### Quick References
+
+- [Service Management — Windows, PowerShell, Linux and macOS](quick-reference/services.md)
+
+---
+
 ## Planned Companion Resources
 
 The repository will gradually include references for areas such as:
 
-- Services
 - Networking
 - Storage
 - Processes
